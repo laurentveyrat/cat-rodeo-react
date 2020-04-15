@@ -1,0 +1,46 @@
+@media only screen and (min-width: 650px) {
+
+.modal {
+    display: block; 
+    position: fixed; 
+    width: 100vw; 
+    height: 100vh;  
+    background-color: rgba(0,0,0,0.9);
+  }
+
+.modal img.modal-content, .modal div.close {
+  display: block;
+  position: relative;
+  bottom: 50px;
+  margin: auto;
+  z-index: 1;
+}
+
+img.modal-content {
+    width: 100%;
+    height: auto;
+    max-height: 120%;
+
+    /* background-color: red; */
+    /* border: 5px solid green; */
+}
+
+/* The Close Button */
+.close {
+    /* position: relative;
+    margin: 0; */
+    top: -50px;
+    color: #f1f1f1;
+    font-size: 70px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+}

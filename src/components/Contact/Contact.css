@@ -1,0 +1,17 @@
+.rectangle-contact {
+	/*background-color: #212121;*/
+	/*background-color: yellow;*/
+	width: 100%;
+	margin: 50px 0px;
+	/*border: 3px solid red;*/
+}
+
+input[type=text]:focus {
+  /*border: 1px solid #555;*/
+  /*transition: 0.5s;*/
+}
+
+#contact input:focus {
+	/*outline: 0;
+	border-color: #bdbdbd;*/
+}

@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'NemoyMedium';
+    src: url('../../fonts/nemoy_medium-webfont.eot');
+    src: local('☺'), url('../../fonts/nemoy_medium-webfont.eot?#iefix') format('embedded-opentype'),url('../../fonts/nemoy_medium-webfont.woff') format('woff'),url('../../fonts/nemoy_medium-webfont.ttf') format('truetype'),url('../../fonts/nemoy_medium-webfont.svg#NemoyMedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+    
+.icon-menu {
+	display: inline-block;
+    width: 33%;
+}
+
+.icon-menu a {
+	cursor: pointer ;
+}
+
+.logo {
+    flex-grow: 1;
+    flex-shrink: 1;
+    display: inline-block;
+    width: auto;
+    margin-left: 50px;
+    padding: 0 10px;
+    /* border: 2px solid red; */
+}
+
+.logo.active {
+    display: inline-block;
+}
+
+.logo h1 {
+	font-family: "NemoyMedium", "Open Sans";
+	font-size: 32px;
+	font-weight: bold;
+	color: white;
+}
+
+.logo .A-orange {
+	color: #FF9800;
+}
+
+#menu-hamburger, #menu-close {
+	display: none;
+}
+
+@media only screen and (max-width: 950px) {
+    .logo {
+		margin-left: 30px;
+	}
+	.logo h1 {
+		font-size: 30px;
+	}
+}
+
+@media only screen and (max-width: 890px) {
+    .logo {
+      margin-left: 20px;
+    }
+    .logo h1 {
+      font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+	div.icon-menu {
+		display: block;
+		/*display: inline-block;*/
+    	width: 100%;
+	}
+	#menu-close {
+		float: left;
+		position: relative;
+		top: 65px;
+		left: 25px;
+	}
+	#menu-close.active, #menu-hamburger.active {
+		display: block;
+	}
+	#menu-close.disabled, #menu-hamburger.disabled, .logo.disabled {
+		display: none;
+	}
+	#menu-hamburger {
+		float: right;
+		position: relative;
+		margin: 30px;
+		/*top: 15px;*/
+		/*right: 15px;*/
+	}
+}

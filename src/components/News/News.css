@@ -1,0 +1,30 @@
+.news {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	/*float: left;*/
+	/*margin-left: 30px;
+	margin-right: 50px;*/
+	/*border: 2px solid green;*/
+}
+
+
+@media only screen and (max-width: 870px) {
+	.news {
+		justify-content: space-around;
+	}
+}
+
+
+/*@media only screen and (max-width: 1140px) {
+	.news {
+		justify-content: center;
+	}
+}*/
+
+.img-news {
+	/* display: block;
+	margin: 50px auto 0;
+	width: 50%;
+	height: auto; */
+}

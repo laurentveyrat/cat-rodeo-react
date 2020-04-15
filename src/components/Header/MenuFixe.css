@@ -1,0 +1,52 @@
+div.myHeader {
+  position: fixed;
+  top: 0;
+  width: 100%; 
+  z-index: 10;  
+  
+  /*padding: 0 5px;*/
+  /*height: 78px;*/
+  /*border-bottom: 1px solid grey;*/
+}
+
+
+nav#menu-fixe {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  
+  position: fixed;
+  color: white;
+  width: 100%;
+  height: 82px;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 auto;
+
+  /*border: 2px solid red;*/
+  z-index: 1;
+  background-color: rgba(0, 0, 0, .7);
+}
+
+
+@media only screen and (max-width: 950px) {
+  nav {
+    margin-right: 30px;
+  }
+}
+
+@media only screen and (max-width: 890px) {
+  nav {
+    margin-right: 20px;
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+	nav#menu-fixe.responsive {
+		background-color: rgba(0, 0, 0, .9);
+		height: 320px;
+	}
+}

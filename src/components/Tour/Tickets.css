@@ -1,0 +1,101 @@
+.tickets {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	font-size: 25px;
+	border-bottom: solid;
+	padding: 20px 0;
+	font-weight: 500;
+	
+	/*border: 2px solid red;*/
+}
+
+/* button => https://www.w3schools.com/howto/howto_css_animate_buttons.asp*/
+
+.buttonTicket {
+    border-radius: 5px;
+    background-color: #FF9800;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 25px;
+    padding: 6px;
+    width: 160px;
+    transition: all 0.5s;
+    cursor: pointer;
+    font-weight: 500;
+    outline: none;
+    /*margin: 20px;*/
+  }
+  
+  /*.button:active {
+      animated bounce;
+  }*/
+  
+  .buttonTicket span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative; ;
+    transition: 0.5s;
+  }
+  
+  .buttonTicket span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: -2px;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .buttonTicket:hover span {
+    padding-right: 25px;
+  }
+  
+  .buttonTicket:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
+@media only screen and (max-width: 830px) {
+	.tickets, .buttonTicket {
+		font-size: 20px !important;
+	}
+	.buttonTicket {
+		width: 140px;
+	}
+	div.tickets span {
+		padding: 0 5px;
+		text-align : center;
+	}
+}
+
+@media only screen and (max-width: 630px) {
+	.tickets, .buttonTicket {
+		font-size: 15px !important;
+	}
+	.buttonTicket {
+		width: 120px;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.tickets, .buttonTicket {
+		font-size: 15px !important;
+	}
+	.buttonTicket {
+		width: 110px;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.tickets {
+		flex-direction: column;
+		align-items: center;
+		line-height: 2em;
+    }
+    .buttonTicket {
+		/*width: 50%;*/
+	}
+}

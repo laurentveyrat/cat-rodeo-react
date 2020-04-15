@@ -1,0 +1,90 @@
+.rectangle-music {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 500px;
+	width: 100%;
+	margin: 50px 0px;
+	/*border: 3px solid red;*/
+	/*background-color: purple;*/
+}
+
+.pochette-music {
+	/*display: flex;*/
+	/*align-content: flex-start;*/
+	
+	/*background: url("image/music/fire-on-the-mountain.jpg");*/
+	background: top / contain no-repeat url("../../images/music/fire-on-the-mountain.jpg");
+	width: 50%;
+	height: 100%;
+	/*background-color: yellow;*/
+	/*border: 3px solid blue;*/
+
+}
+
+.sound-music {
+	/*display: flex;*/
+
+	/*width: auto;*/
+	height: 100%;
+	/*background-color: yellow;*/
+	/*border: 3px solid blue;*/
+}
+
+
+.download {
+  display: block;
+  border-radius: 5px; 
+  background-color: #ff5722;
+  border: none;
+  color: white;
+  padding: 13px 22px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 30px auto;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  outline: none;
+}
+
+.download:hover {
+  background-color: #555555;
+  color: white;
+}
+
+
+@media only screen and (max-width: 850px) {
+	.sound-music {
+		width: 40%;
+	}
+	.rectangle-music {
+		justify-content: space-around;
+		height: 400px;
+		margin: 0;
+	}
+}
+
+@media only screen and (max-width: 750px) {
+	.sound-music {
+		width: 45%;
+	}
+	.rectangle-music {
+		justify-content: space-between;
+		height: 300px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.sound-music {
+		width: 47%;
+	}
+	.download {
+		font-size: 13px;
+		padding: 13px 16px;
+		margin: 10px auto;
+	}
+}
