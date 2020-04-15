@@ -82,7 +82,16 @@ class MailchimpSignupForm extends Component {
   render() {
     return (
         <div id="mc_embed_signup" >
-                <form onSubmit={this.envoiForm} action='https://catrodeo.us4.list-manage.com/subscribe/post?u=361f58b13d23169917ba26f6a&amp;id=972ef4f895' method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
+                <form 
+                  onSubmit={this.envoiForm} 
+                  action='https://catrodeo.us4.list-manage.com/subscribe/post?u=361f58b13d23169917ba26f6a&amp;id=972ef4f895' 
+                  method="post" 
+                  id="mc-embedded-subscribe-form" 
+                  name="mc-embedded-subscribe-form" 
+                  className="validate" 
+                  target="_blank" 
+                  noValidate>
+                  
                   <div id="mc_embed_signup_scroll" className="form-follow form-follow1">
                   
                   <div id="mc-field-group" className="mc-field-group">
