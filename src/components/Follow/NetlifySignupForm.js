@@ -84,6 +84,7 @@ class NetlifySignupForm extends Component {
     return (
     
       <form onSubmit={this.handleSubmit}>
+        <input type="hidden" name="form-name" value="contact" />
         <p>
           <label>
             Your Email: <input type="email" name="email" value={email} onChange={this.handleChange} />
