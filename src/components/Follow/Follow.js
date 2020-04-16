@@ -2,8 +2,9 @@ import React from 'react';
 import './Follow.css';
 
 import SocialMedia from './SocialMedia'
-import MailchimpSignupForm from './MailchimpSignupForm'
+// import MailchimpSignupForm from './MailchimpSignupForm'
 // import TestSignupDeux from './TestSignupDeux'
+import NetlifySignupForm from './NetlifySignupForm'
 
 const Follow = () => {
     return (
@@ -13,7 +14,7 @@ const Follow = () => {
                 <h2 style={{textAlign: 'center'}}>{'FOLLOW & SUBSCRIBE'}</h2>
                 <p>we'll keep you posted on all the latest news from the band!</p>
                 <SocialMedia />
-                <MailchimpSignupForm />
+                <NetlifySignupForm />
 
               </div>
             </div>

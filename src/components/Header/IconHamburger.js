@@ -13,7 +13,7 @@ const IconHamburger = (props) => {
     
     return (
         <div id="menu-hamburger" className={`${menuHamburgerClassName}`}>
-            <a onClick={props.handleMenuResponsive}><img src={iconMenu} alt='icon hamburger' /></a>
+            <a onClick={props.handleMenuResponsive} href='#'><img src={iconMenu} alt='icon hamburger' /></a>
         </div>
     );
 };

@@ -10,25 +10,6 @@ class MailchimpSignupForm extends Component {
     this.setState({mail})
   }
 
-  // A supprimer
-
-  handleSubmit = event => {
-    console.log("Click submit !")
-    event.preventDefault()
-    const mail = this.state.mail
-    console.log(mail)
-    console.log("Form envoyé !")
-    this.setState({mail: ''})
-  }
-
-  
-  // messageErreurCheckboxNonCocher = document.getElementById("mce-error-response-checkbox")
-  // messageErreurMailNonValide = document.getElementById("mce-error-response-mail")
-  // messageSucces = document.getElementById("mce-success-response")
-  // myCheck = document.getElementById("myCheckbox")
-  // inputEmail = document.getElementById("mce-EMAIL")
-  // divInputMail = document.getElementById("mc-field-group")
-
   afficheMessageSucces() {
     const divInputMail = document.getElementById("mc-field-group")
     const messageSucces = document.getElementById("mce-success-response")
@@ -55,7 +36,7 @@ class MailchimpSignupForm extends Component {
     }, 5000)
   }
 
-  envoiForm = event => {
+  handleSubmit = event => {
     console.log("Click submit !")
 
     const mail = this.state.mail
@@ -82,7 +63,16 @@ class MailchimpSignupForm extends Component {
   render() {
     return (
         <div id="mc_embed_signup" >
-                <form onSubmit={this.envoiForm} action='https://catrodeo.us4.list-manage.com/subscribe/post?u=361f58b13d23169917ba26f6a&amp;id=972ef4f895' method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
+                <form 
+                  onSubmit={this.handleSubmit} 
+                  action='https://catrodeo.us4.list-manage.com/subscribe/post?u=361f58b13d23169917ba26f6a&amp;id=972ef4f895' 
+                  method="post" 
+                  id="mc-embedded-subscribe-form" 
+                  name="mc-embedded-subscribe-form" 
+                  className="validate" 
+                  target="_blank" 
+                  noValidate>
+                  
                   <div id="mc_embed_signup_scroll" className="form-follow form-follow1">
                   
                   <div id="mc-field-group" className="mc-field-group">

@@ -13,7 +13,7 @@ const IconClose = (props) => {
 
     return (
         <div id="menu-close" className={`${menuCloseClassName}`}>
-            <a onClick={props.handleMenuResponsive}><img src={iconMenu} alt='icon croix' /></a>
+            <a onClick={props.handleMenuResponsive} href='#'><img src={iconMenu} alt='icon croix' /></a>
         </div>
     );
 };
