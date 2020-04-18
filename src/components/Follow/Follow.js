@@ -15,7 +15,6 @@ const Follow = () => {
                 <p>we'll keep you posted on all the latest news from the band!</p>
                 <SocialMedia />
                 <NetlifySignupForm />
-
               </div>
             </div>
           </div>
