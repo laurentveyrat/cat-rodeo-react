@@ -6,10 +6,11 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
-    "firebase": "^7.14.0",
+    "firebase": "^7.14.1",
     "graphql-hooks": "^4.4.4",
     "re-base": "^4.0.0",
     "react": "^16.13.1",
+    "react-app-polyfill": "^1.0.6",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1",
@@ -28,8 +29,7 @@
     "production": [
       ">0.2%",
       "not dead",
-      "not op_mini all",
-      "ie 10"
+      "not op_mini all"
     ],
     "development": [
       "last 1 chrome version",

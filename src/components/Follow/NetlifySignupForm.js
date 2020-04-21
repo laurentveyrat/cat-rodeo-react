@@ -55,7 +55,7 @@ class NetlifySignupForm extends Component {
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: encode({ "form-name": "contact", ...this.state })
           })
-            .then(() => console.log("Form sent !"))
+            .then(() => console.log("Form sent!"))
             .catch(error => alert(error));
 
       // Reset mail box & checked button
@@ -69,17 +69,6 @@ class NetlifySignupForm extends Component {
     event.preventDefault()
   }
 
-  // handleSubmit = e => {
-  //   fetch("/", {
-  //     method: "POST",
-  //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
-  //     body: encode({ "form-name": "contact", ...this.state })
-  //   })
-  //     .then(() => alert("Success!"))
-  //     .catch(error => alert(error));
-
-  //   e.preventDefault();
-  // }
 
   handleChange = e => this.setState({ [e.target.name]: e.target.value });
 
