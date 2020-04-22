@@ -16,7 +16,7 @@ const Photo = ({ photo }) => {
     // }
     
 
-    function toggleModal() {
+    function toggleModal(e) {
         setShowModal(!showModal)
     }
 

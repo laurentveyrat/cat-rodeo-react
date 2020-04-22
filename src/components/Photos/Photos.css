@@ -1,70 +1,75 @@
+/* autoprefixer grid: autoplace */
+
 .photos {
 	display: grid;
 	justify-content: space-between;
-	/*justify-items: center;*/
 	align-content: start;
-	grid-template-columns: repeat(auto-fit, 250px);
+	grid-template-columns: repeat(4, 250px);
 	grid-template-rows: repeat(4, 250px);
 	grid-gap: 30px;
-	/*margin-left: 30px;
-	margin-right: 50px;*/
+	margin: 0 auto;
 	margin-bottom: 100px;
-	/*height: 1000px;*/
 	/*border: 2px solid green;*/
 }
 
 @media only screen and (max-width: 1207px) {
 	.photos {
-		grid-template-columns: repeat(auto-fit, 200px);
+		grid-template-columns: repeat(4, 200px);
 		grid-template-rows: repeat(4, 200px);
 	}
 }
 
-/*@media only screen and (max-width: 1090px) {
-	.photos {
-		grid-template-columns: repeat(auto-fit, 400px);
-		grid-template-rows: repeat(8, 400px);
-	}
-}*/
-
 @media only screen and (max-width: 1030px) {
 	.photos {
-		grid-template-columns: repeat(auto-fit, 400px);
+		grid-template-columns: repeat(2, 400px);
 		grid-template-rows: repeat(8, 400px);
 	}
 }
 
 @media only screen and (max-width: 950px) {
 	.photos {
-		grid-template-columns: repeat(auto-fit, 350px);
+		grid-template-columns: repeat(2, 350px);
 		grid-template-rows: repeat(8, 350px);
 	}
 }
 
 @media only screen and (max-width: 850px) {
 	.photos {
-		grid-template-columns: repeat(auto-fit, 300px);
+		grid-template-columns: repeat(2, 300px);
 		grid-template-rows: repeat(8, 300px);
 	}
 }
 
 @media only screen and (max-width: 750px) {
 	.photos {
-		grid-template-columns: repeat(auto-fit, 250px);
+		grid-template-columns: repeat(2, 250px);
 		grid-template-rows: repeat(8, 250px);
 	}
 }
 
 @media only screen and (max-width: 650px) {
 	.photos {
-		grid-template-columns: repeat(auto-fit, 400px);
+		grid-template-columns: repeat(1, 400px);
 		grid-template-rows: repeat(16, 400px);
 		justify-content: center;
 	}
 }
 
+@media only screen and (max-width: 450px) {
+	.photos {
+		grid-template-columns: repeat(1, 300px);
+		grid-template-rows: repeat(16, 300px);
+	}
+}
+
+@media only screen and (max-width: 300px) {
+	.photos {
+		grid-template-columns: repeat(1, 200px);
+		grid-template-rows: repeat(16, 200px);
+	}
+}
+
 .photos img {
-	/*transform: rotate(90deg);*/
 	object-fit: cover;
 	box-sizing: border-box;
 	width: 100%;

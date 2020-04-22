@@ -3,8 +3,6 @@ import { useQuery } from "graphql-hooks";
 import './News.css';
 
 import NewsInfo from './NewsInfo'
-// import news from '../../news'
-
 
 const NEWS_QUERY  = `query MyQuery {
   allNews(orderBy: dateNews_DESC) {
@@ -18,16 +16,16 @@ const NEWS_QUERY  = `query MyQuery {
 }`
 
 function News () {
-    // const [news, setNews] = useState({})
-
+  
     const { loading, error, data } = useQuery(NEWS_QUERY)
 
     if (loading) return "Loading...";
     if (error) return "Something Bad Happened";
 
-    const allNews = data.allNews.map(({ titreNews, dateNews, imageNews }) => (
-      <NewsInfo key={titreNews} titreNews={titreNews} dateNews={dateNews} imageNews={imageNews} />
-    ))
+    const allNews = data.allNews.map(({ titreNews, dateNews, imageNews }, index) => {
+      let isPair = (index + 1) % 2 === 0
+      return <NewsInfo key={titreNews} titreNews={titreNews} dateNews={dateNews} imageNews={imageNews} isPair={isPair} />
+    })
         
     return (     
         <div id="news" className="margin-reduit">

@@ -2,7 +2,7 @@ import React from 'react';
 import './NewsInfo.css';
 
 
-const NewsInfo = ({ titreNews, dateNews, imageNews }) => {
+const NewsInfo = ({ titreNews, dateNews, imageNews, isPair }) => {
 
     const dateIsoFormat = new Date(dateNews);
     const dateTable = dateIsoFormat.toDateString().split(' ').slice(1)
@@ -17,13 +17,14 @@ const NewsInfo = ({ titreNews, dateNews, imageNews }) => {
     //     }
     // }
 
-    // const newsClass = () => {
-    //     let numNews = Number(image[5])
-    //     if (numNews % 2 === 0) return 'news-pair'
-    // }
+    const addMarginTop = () => {
+        if (isPair) {
+            return 'news-pair'
+        }
+    }
 
     return (
-        <div className={`rectangle-news`}>
+        <div className={`rectangle-news ${addMarginTop()}`}>
             <div className="news-image">
                 <img src={imageNews.url} alt={imageNews.alt} />
             </div>
