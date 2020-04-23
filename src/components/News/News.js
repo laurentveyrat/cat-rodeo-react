@@ -12,6 +12,9 @@ const NEWS_QUERY  = `query MyQuery {
       url
       alt
     }
+    videoYt {
+      url
+    }
   }
 }`
 
@@ -22,9 +25,9 @@ function News () {
     if (loading) return "Loading...";
     if (error) return "Something Bad Happened";
 
-    const allNews = data.allNews.map(({ titreNews, dateNews, imageNews }, index) => {
+    const allNews = data.allNews.map(({ titreNews, dateNews, imageNews, videoYt }, index) => {
       let isPair = (index + 1) % 2 === 0
-      return <NewsInfo key={titreNews} titreNews={titreNews} dateNews={dateNews} imageNews={imageNews} isPair={isPair} />
+      return <NewsInfo key={titreNews} titreNews={titreNews} dateNews={dateNews} imageNews={imageNews} videoYt={videoYt} isPair={isPair} />
     })
         
     return (     

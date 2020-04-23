@@ -2,7 +2,7 @@ import React from 'react';
 import './NewsInfo.css';
 
 
-const NewsInfo = ({ titreNews, dateNews, imageNews, isPair }) => {
+const NewsInfo = ({ titreNews, dateNews, imageNews, videoYt, isPair }) => {
 
     const dateIsoFormat = new Date(dateNews);
     const dateTable = dateIsoFormat.toDateString().split(' ').slice(1)
@@ -23,6 +23,13 @@ const NewsInfo = ({ titreNews, dateNews, imageNews, isPair }) => {
         }
     }
 
+    const urlVideoYt = () => {
+        if (videoYt === null) {
+            return "https://www.youtube.com/channel/UCYMl5EB3MwH_4p-NK5ex-eg/videos"
+        }
+        return videoYt.url
+    }
+
     return (
         <div className={`rectangle-news ${addMarginTop()}`}>
             <div className="news-image">
@@ -32,7 +39,9 @@ const NewsInfo = ({ titreNews, dateNews, imageNews, isPair }) => {
                 <div className="news-infos">
                     <h3 className="news-titre">{titreNews}</h3>
                     <h4 className="news-date">{date}</h4>
-                    <button className="view-more">VIEW MORE</button>
+                    <a href={urlVideoYt()} target="_blank">
+                        <button className="view-more">VIEW MORE</button>
+                    </a>
                 </div>
             </div> 
         </div>
