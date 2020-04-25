@@ -27,7 +27,7 @@ const Logo = (props) => {
                 handleMenuResponsive={props.handleMenuResponsive}/>
             
         </div>
-    );
-};
+    )
+}
 
 export default Logo;

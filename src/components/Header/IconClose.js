@@ -15,7 +15,7 @@ const IconClose = (props) => {
         <div id="menu-close" className={`${menuCloseClassName}`}>
             <a onClick={props.handleMenuResponsive} href='#'><img src={iconMenu} alt='icon croix' /></a>
         </div>
-    );
-};
+    )
+}
 
 export default IconClose;

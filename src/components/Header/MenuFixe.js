@@ -25,7 +25,7 @@ const MenuFixe = (props) => {
                     handleMenuResponsive={props.handleMenuResponsive} />
            </nav>
         </div>
-    );
-};
+    )
+}
 
 export default MenuFixe;

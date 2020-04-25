@@ -69,10 +69,10 @@ class NetlifySignupForm extends Component {
     event.preventDefault()
   }
 
-
   handleChange = e => this.setState({ [e.target.name]: e.target.value });
 
 
+  
   render() {
     const { email } = this.state;
     return (

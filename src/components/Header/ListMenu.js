@@ -20,7 +20,7 @@ const ListMenu = (props) => {
             <li><a href="#photos" onClick={props.handleMenuResponsive}>PHOTOS</a></li>
             <li><a href="#contact" onClick={props.handleMenuResponsive}>CONTACT</a></li>
         </ul>
-    );
-};
+    )
+}
 
 export default ListMenu;

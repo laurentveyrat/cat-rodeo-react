@@ -15,8 +15,7 @@ const Music = () => {
           </div>
         </div>
       </div>
-
-    );
-};
+    )
+}
 
 export default Music;

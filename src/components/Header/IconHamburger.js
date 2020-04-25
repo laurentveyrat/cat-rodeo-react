@@ -15,7 +15,7 @@ const IconHamburger = (props) => {
         <div id="menu-hamburger" className={`${menuHamburgerClassName}`}>
             <a onClick={props.handleMenuResponsive} href='#'><img src={iconMenu} alt='icon hamburger' /></a>
         </div>
-    );
-};
+    )
+}
 
 export default IconHamburger;

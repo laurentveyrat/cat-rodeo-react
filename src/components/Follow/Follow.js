@@ -2,8 +2,6 @@ import React from 'react';
 import './Follow.css';
 
 import SocialMedia from './SocialMedia'
-// import MailchimpSignupForm from './MailchimpSignupForm'
-// import TestSignupDeux from './TestSignupDeux'
 import NetlifySignupForm from './NetlifySignupForm'
 
 const Follow = () => {
