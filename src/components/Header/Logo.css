@@ -11,10 +11,6 @@
     width: 33%;
 }
 
-.icon-menu a {
-	cursor: pointer ;
-}
-
 .logo {
     flex-grow: 1;
     flex-shrink: 1;

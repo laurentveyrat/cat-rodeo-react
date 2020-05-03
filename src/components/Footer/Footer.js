@@ -1,5 +1,7 @@
-import React from 'react';
-import './Footer.css';
+import React from 'react'
+import './Footer.css'
+
+import { Link } from "react-router-dom"
 
 const Footer = () => {
     return (
@@ -7,13 +9,13 @@ const Footer = () => {
             <div id="footer" className="footer">
                 <div className="copyright">©2020 CAT RODEO ALL RIGHTS RESERVED.</div>
                 <ul className="privacy-policy">
-                    <li><a href="#footer">PRIVACY POLICY</a></li>
-                    <li className="milieu"><a href="#footer">TERMS OF USE</a></li>
-                    <li><a href="#footer">COOKIE POLICY</a></li>
+                    <li><Link to="/privacy-policy">PRIVACY POLICY</Link></li>
+                    <li className="milieu"><Link to="/terms-of-use">TERMS OF USE</Link></li>
+                    <li><Link to="/cookie-policy">COOKIE POLICY</Link></li>
                 </ul>
             </div> 
         </footer>
     )
 }
 
-export default Footer;
+export default Footer

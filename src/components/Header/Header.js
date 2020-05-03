@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useQuery } from "graphql-hooks";
+import { Image } from 'react-datocms';
 import './Header.css';
 
 import MenuFixe from './MenuFixe'
@@ -7,7 +8,18 @@ import MenuFixe from './MenuFixe'
 const MAIN_IMAGE_QUERY  = `query MyQuery {
     mainImage {
         image {
-          url
+            url
+            responsiveImage {
+                srcSet
+                webpSrcSet
+                sizes
+                src
+                width
+                height
+                aspectRatio
+                alt
+                base64
+            }
         }
       }
   }`
@@ -25,12 +37,13 @@ function Header () {
     if (error) return "Something Bad Happened";
     
     return (
-        <header className="main-page">           
+        <header className="main-page" id="header">           
                 <MenuFixe 
                     menuResponsive={menuResponsive}
                     handleMenuResponsive={handleMenuResponsive} />                  
                 <div className="background-main-image">
-                    <img src={data.mainImage.image.url} alt='Groupe de rock à paris, Cat Rodeo' />
+                    <img className="img-main" src={data.mainImage.image.url} alt='Rock band in Paris, Cat Rodeo' />
+                    {/* <Image className="img-main" data={data.mainImage.image.responsiveImage} /> */}
                 </div>
         </header>
     )

@@ -3,6 +3,8 @@ import './Logo.css';
 import IconClose from './IconClose'
 import IconHamburger from './IconHamburger'
 
+import { Link } from "react-router-dom"
+
 const Logo = (props) => {
     let isMenuResponsive = props.menuResponsive
     let logoClassName = ' active'
@@ -16,7 +18,7 @@ const Logo = (props) => {
     return (
         <div className="icon-menu">
             <div id="logo-nav" className={`logo ${logoClassName}`}>
-                <h1><a href="#">C<span className="A-orange">A</span>T RODEO</a></h1>
+                <h1><Link to="/#header">C<span className="A-orange">A</span>T RODEO</Link></h1>
             </div>
 
             <IconClose 

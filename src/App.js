@@ -1,5 +1,9 @@
-import React, { Component, Fragment } from 'react';
+import React, { Fragment } from 'react';
 import './App.css';
+
+// import { useQuery } from "graphql-hooks";
+// import { renderMetaTags } from "react-datocms";
+// import { Helmet } from "react-helmet";
 
 import Header from './components/Header/Header'
 import Tour from './components/Tour/Tour'
@@ -12,8 +16,8 @@ import Follow from './components/Follow/Follow'
 import Footer from './components/Footer/Footer'
 
 
-class App extends Component {
-  render () {
+
+function App() {
     return (
       <Fragment>
         <Header />
@@ -27,7 +31,6 @@ class App extends Component {
         <Footer />
       </Fragment>
     )
-  }
 }
 
 export default App;

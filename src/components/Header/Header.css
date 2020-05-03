@@ -11,7 +11,7 @@ div.background-main-image {
 	/*border: 3px solid blue;*/
 }
 
-div.background-main-image>img {
+div.background-main-image .img-main {
 	display: block;
 	width: 100%;
 	height: 100%;
