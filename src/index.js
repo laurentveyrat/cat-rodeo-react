@@ -1,10 +1,10 @@
-import 'react-app-polyfill/ie11';
-import 'react-app-polyfill/stable';
+import 'react-app-polyfill/ie11'
+import 'react-app-polyfill/stable'
 
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import './index.css'
+import App from './App'
 import Admin from './components/Admin/Admin'
 import PrivacyPolicy from './components/Footer/PrivacyPolicy'
 import TermsOfUse from './components/Footer/TermsOfUse'
@@ -16,11 +16,11 @@ import { GraphQLClient, ClientContext } from 'graphql-hooks'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 const client = new GraphQLClient({
-  url: "https://graphql.datocms.com/",
+  url: 'https://graphql.datocms.com/',
   headers: {
-    "Authorization": "37122a617c98c99150a1fbbb98071b",
+    Authorization: '37122a617c98c99150a1fbbb98071b'
   }
-});
+})
 
 const Root = () => (
 
@@ -39,12 +39,11 @@ const Root = () => (
     </ClientContext.Provider>
   </React.StrictMode>
 
-  
 )
 
-ReactDOM.render(<Root />, document.getElementById('root'));
+ReactDOM.render(<Root />, document.getElementById('root'))
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+serviceWorker.unregister()
