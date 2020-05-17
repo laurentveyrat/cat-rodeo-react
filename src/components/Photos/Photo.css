@@ -5,6 +5,13 @@
 	/*border: 3px solid red;*/
 }
 
+.rectangle-photos img {
+	object-fit: cover;
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+}
+
 @media only screen and (max-width: 450px){
     .rectangle-photos {
       width: 90%;

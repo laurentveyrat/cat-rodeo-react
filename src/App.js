@@ -1,5 +1,5 @@
-import React, { Fragment } from 'react';
-import './App.css';
+import React, { Fragment } from 'react'
+import './App.css'
 
 // import { useQuery } from "graphql-hooks";
 // import { renderMetaTags } from "react-datocms";
@@ -15,22 +15,20 @@ import Contact from './components/Contact/Contact'
 import Follow from './components/Follow/Follow'
 import Footer from './components/Footer/Footer'
 
-
-
-function App() {
-    return (
-      <Fragment>
-        <Header />
-        <Tour /> 
-        <News />
-        <Videos />
-        <Music />
-        <Photos />
-        <Contact />
-        <Follow />
-        <Footer />
-      </Fragment>
-    )
+function App () {
+  return (
+    <>
+      <Header />
+      <Tour />
+      <News />
+      <Videos />
+      <Music />
+      <Photos />
+      <Contact />
+      <Follow />
+      <Footer />
+    </>
+  )
 }
 
-export default App;
+export default App
