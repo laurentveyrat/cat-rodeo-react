@@ -6,6 +6,11 @@ import Modal from './Modal'
 const Photo = ({ photo }) => {
   const [showModal, setShowModal] = useState(false)
 
+
+  function toggleModal (e) {
+    setShowModal(!showModal)
+  }
+
   // const requireImage = chemin => {
   //     try {
   //         return require(`../../images/photos/${chemin}`)
@@ -13,10 +18,6 @@ const Photo = ({ photo }) => {
   //         return require(`../../images/photos/photo-1.jpg`)
   //     }
   // }
-
-  function toggleModal (e) {
-    setShowModal(!showModal)
-  }
 
   return (
     <>

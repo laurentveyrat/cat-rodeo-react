@@ -10,6 +10,7 @@ const VIDEOS_QUERY  = `query MyQuery {
           id
           url
           alt
+          customData
         }
       }
   }`
@@ -21,7 +22,7 @@ function Videos () {
     if (loading) return "Loading...";
     if (error) return "Something Bad Happened";
 
-    const allVideos = data.allVideos[0].videos.map( video  => (
+    const allVideos = data.allVideos[0].videos.map( video => (
         <Video key={video.id} video={video} />
     ))
 
