@@ -16,7 +16,7 @@ const IframeVideo = ({ showIframe, toggleIframe, video }) => {
           <div className='boite-video'>
             <iframe 
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen
+            allowFullScreen
             style={{
                 position: "absolute",
                 top: 0,

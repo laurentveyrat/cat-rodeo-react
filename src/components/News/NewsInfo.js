@@ -39,7 +39,7 @@ const NewsInfo = ({ titreNews, dateNews, imageNews, videoYt, isPair }) => {
                 <div className="news-infos">
                     <h3 className="news-titre">{titreNews}</h3>
                     <h4 className="news-date">{date}</h4>
-                    <a href={urlVideoYt()} target="_blank">
+                    <a href={urlVideoYt()} target="_blank" rel="noopener noreferrer">
                         <button className="view-more">VIEW MORE</button>
                     </a>
                 </div>
