@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useQuery } from 'graphql-hooks'
-// import { Image } from 'react-datocms'
+import { Image } from 'react-datocms' // for lazy loading
 import './Header.css'
 
 import MenuFixe from './MenuFixe'
@@ -43,8 +43,8 @@ function Header () {
         handleMenuResponsive={handleMenuResponsive}
       />
       <div className='background-main-image'>
-        <img className='img-main' src={data.mainImage.image.url} alt='Rock band in Paris, Cat Rodeo' />
-        {/* <Image className="img-main" data={data.mainImage.image.responsiveImage} /> */}
+        {/* <img className='img-main' src={data.mainImage.image.url} alt='Rock band in Paris, Cat Rodeo' /> */}
+        <Image className="img-main" data={data.mainImage.image.responsiveImage} />
       </div>
     </header>
   )

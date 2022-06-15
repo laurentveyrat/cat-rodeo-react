@@ -21,6 +21,11 @@ div.background-main-image .img-main {
 	/* background-color: red; */
 }
 
+div.background-main-image .img-main > picture {
+	inset: -140px 0px 0px 0px  !important;
+}
+
+
 @media only screen and (max-width: 890px) {
 	header.main-page {
 		height: 80vh;
